@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        
+        <style>
+
+/* ------------------------------------------------------------------- */
+/* 0. 공통   */
+
+        :root {
+            --text-color: #f0f4f5;
+            --background-color: #263343;
+            --accent-color: #d49466;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Gothic', sans-serif;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            width: 50px;
+            list-style: none;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(75, 73, 73);
+            text-align: center;
+        }
+
+/* ------------------------------------------------------------------- */
+/* 1. nav   */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 140px;
+            background-color: white;
+        }
+        .navbar__logo a {
+            font-size: 30px;
+            font-weight: bold;
+            color: dimgray;
+            letter-spacing: 1px;
+        }
+        .navbar__menu {
+            display: flex;
+            padding-left: 0;
+        }
+        
+        .navbar__logo {
+            width: 200px;
+            height: 40px;
+            display: flex;
+            margin: 7px 0 0 150px;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar__menu li {
+            width: 60px;
+            padding: 8px 20px;
+            font-size: 17px;
+            font-weight: lighter;
+        }
+
+        .navbar__menu li a:hover {
+            color: plum;
+        }
+
+        .navbar__menu #menu1_C, .navbar__menu #menu1_D{
+            width: 70px;
+        }
+        
+        .navbar__login {
+            display: flex;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .navbar__login li {
+            padding: 8px 12px;
+        }
+        .navbar__login #menu2_A {
+            width: 60px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            .navbar {   
+                align-items: flex-start;
+                padding: 15px 50px 0;
+            }
+            .navbar__menu {
+                display:none;
+            }
+
+        }
+        
+/* ------------------------------------------------------------------- */
+/* 2. section   */
+
+        section {
+            width: auto; height: 1200px;
+            padding: 50px 200px 0 250px;
+            margin: 0 auto;
+            text-align: center;
+            background-color:whitesmoke;
+        }
+        section #sentence {
+            text-align: left;
+        }
+        section #condition {
+            height: 170px; padding: 35px 0 0 0;
+            border: 1px solid #cccccc;
+            background-color: white;
+        }
+        section span {
+            border: 1px solid #cccccc;
+            font-weight: bold;
+        }
+        section h5 {
+            text-align: left;
+        }
+
+/* ------------------------------------------------------------------- */
+/* 3. footer   */
+
+
+footer {
+            width: 1100px;
+            margin: 0 auto 50px auto;
+            padding: 30px;
+            color: rgb(104, 98, 98);
+        }
+        footer .footer_lineUp {
+            display: flex;
+            padding: 0;
+        }
+        footer .footer_lineUp li {
+            font-size: 15px;
+            width: 110px;
+            font-weight: lighter;
+            padding: 0 12px;
+       }
+
+        footer .footer_lineUp #A {
+            width: 100px;
+        }
+        footer .footer_lineUp #B {
+            width: 120px;
+        }
+        footer .footer_lineUp #C {
+            width: 80px;
+        }
+
+        footer .footer_lineUp a {
+            color: grey;
+        }
+
+        footer .footer_line {
+            width: auto;
+            border-bottom: 1px solid rgb(224, 222, 222);
+        }
+
+        footer .footer_lineDown h2 {
+            color: darkgray;
+            font-size: 40px;
+            font-weight: lighter;
+            margin: 20px 0;
+        }
+
+        footer .footer_lineDown #opening {
+            font-size: 20px;
+            color: darkgrey;
+        }
+
+        footer .footer_lineDown p {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo"><a href="atom_soomGo.html"><i class="fas fa-car-side"></i>&nbspSAVECAR</a></div>
+            <ul class="navbar__menu">
+                <li id="menu1_A"><a href="월렌트.html">월렌트</a></li>
+                <li id="menu1_B"><a href="고수찾기.html">재렌트</a></li>
+                <li id="menu1_C"><a href="고수가입.html">단기렌트</a></li>
+                <li id="menu1_D"><a href="고수가입.html">공지사항</a></li>
+            </ul>
+            <ul class="navbar__login">
+                <li id="menu2_A"><a href="월렌트.html">마이페이지</a></li>
+                <li id="menu2_B"><a href="/Users/LG/Desktop/프로그래밍/프론트엔드/월렌트.html">로그인</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="sentence">
+                <h1>월렌트</h1>
+                <h4>1개월 단위로 이용할 수 있는 렌트 상품입니다.</h4>
+            </div>
+            <div id="condition">
+                <span>차종</span>
+                    <input type="radio" name="cartype" value="entire">전체
+                    <input type="radio" name="cartype" value="">중형·소형승용(LPG) 
+                    <input type="radio" name="cartype" value="">중형·소형승용(LPG) 
+                    <input type="radio" name="cartype" value="">중형·소형승용(LPG) <br>
+                    <input type="radio" name="cartype" value="">중형·소형승용(LPG) 
+                    <input type="radio" name="cartype" value="">중형·소형승용(LPG) <br><br>
+                <span>지역</span>
+                    <input type="radio" name="area" value="entire">전체
+                    <input type="radio" name="area" value="">수도권 
+                    <input type="radio" name="area" value="">대전 
+                    <input type="radio" name="area" value="">대구
+                    <input type="radio" name="area" value="">중형·소형승용(LPG) 
+                    <input type="radio" name="area" value="">중형·소형승용(LPG) <br><br>
+                <span>예약가능상황</span>
+                    <input type="radio" name="cartype" value="entire">예약가능차량
+                    <input type="radio" name="cartype" value="">입고예정차량 <br>              
+                </div>
+            <h5>※ 상세페이지에서 차량예약이 가능합니다.</h5>
+        </section>
+        <div id="footer_line"></div>
+
+        <footer class="footer">
+            <ul class="footer_lineUp">
+                <li id="A"><a href="월렌트.html">카즈 회사소개</a></li>
+                <li id="B"><a href="고수찾기.html">개인정보처리방침</a></li>
+                <li id="C"><a href="고수가입.html">이용약관</a></li>
+                <li id="D"><a href="고수가입.html">자주묻는질문</a></li>
+            </ul>
+    
+            <div class="footer_line"></div>
+    
+            <div class="footer_lineDown">
+                <h2 id="phone">1661-3331</h2>
+                <h2 id="opening">
+                    평일 9:00 - 18:00 <br>
+                    (점심시간 12:00 - 13:00 제외 · 주말/공휴일 제외) <br>
+                </h2>
+                <p id="p1">
+                    주식회사 세이브카 | 대표자: 양성희 | 사업자등록번호: 113-86-62612 <br />
+                    주소: 서울특별시 송파구 문정동 가든파이브 라이프 F8012 | 전화번호 :1661-3331 | email : itscar@naver.com <br />
+                    통신판매업신고: 제2016-서울서초-0849호 | 개인정보보호책임자: 김성준 <br />
+                    Copyright Savecar Co., Ltd. All rights reserved. <br />
+                </p>
+            </div>
+        </footer>
+      
+    </body>
+</html>
